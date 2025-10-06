@@ -1,0 +1,516 @@
+[debug] [2025-09-29T01:31:41.451Z] ----------------------------------------------------------------------
+[debug] [2025-09-29T01:31:41.460Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Marti\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2025-09-29T01:31:41.461Z] CLI Version:   14.4.0
+[debug] [2025-09-29T01:31:41.461Z] Platform:      win32
+[debug] [2025-09-29T01:31:41.461Z] Node Version:  v20.19.5
+[debug] [2025-09-29T01:31:41.461Z] Time:          Sun Sep 28 2025 20:31:41 GMT-0500 (hora estándar de Perú)
+[debug] [2025-09-29T01:31:41.461Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-09-29T01:31:41.792Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-29T01:31:41.793Z] > authorizing via signed-in user (martinnets@gmail.com)
+[debug] [2025-09-29T01:31:41.793Z] [iam] checking project cursoreone for permissions ["firebase.projects.get"]
+[debug] [2025-09-29T01:31:41.794Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:31:41.795Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:31:41.796Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone:testIamPermissions [none]
+[debug] [2025-09-29T01:31:41.796Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone:testIamPermissions x-goog-quota-user=projects/cursoreone
+[debug] [2025-09-29T01:31:41.796Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-09-29T01:31:42.800Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone:testIamPermissions 200
+[debug] [2025-09-29T01:31:42.800Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-09-29T01:31:42.800Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:31:42.800Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:31:42.801Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/cursoreone/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-09-29T01:31:42.801Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/cursoreone/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/cursoreone
+[debug] [2025-09-29T01:31:43.875Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/cursoreone/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-09-29T01:31:43.876Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/cursoreone/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-09-29T01:31:43.876Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:31:43.876Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:31:43.876Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone [none]
+[debug] [2025-09-29T01:31:44.131Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone 200
+[debug] [2025-09-29T01:31:44.132Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone {"projectNumber":"830416773395","projectId":"cursoreone","lifecycleState":"ACTIVE","name":"cursoreone","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-05-31T15:18:46.981956Z"}
+[info] 
+[info] === Serving from 'D:\Proyectos\energiasdelmediterraneo.api'...
+[info] 
+[debug] [2025-09-29T01:31:44.154Z] defaultcredentials: writing to file C:\Users\Marti\AppData\Roaming\firebase\martinnets_gmail_com_application_default_credentials.json
+[debug] [2025-09-29T01:31:44.160Z] Setting GAC to C:\Users\Marti\AppData\Roaming\firebase\martinnets_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Marti\\AppData\\Roaming\\firebase\\martinnets_gmail_com_application_default_credentials.json"}}
+[debug] [2025-09-29T01:31:44.161Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:31:44.161Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:31:44.161Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cursoreone/adminSdkConfig [none]
+[debug] [2025-09-29T01:31:44.574Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cursoreone/adminSdkConfig 200
+[debug] [2025-09-29T01:31:44.574Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cursoreone/adminSdkConfig {"projectId":"cursoreone","storageBucket":"cursoreone.firebasestorage.app"}
+[info] i  functions: Watching "D:\Proyectos\energiasdelmediterraneo.api\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\Proyectos\\energiasdelmediterraneo.api\\functions\" for Cloud Functions..."}}
+[debug] [2025-09-29T01:31:44.604Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2025-09-29T01:31:46.709Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions:apienergias",
+    "logs": "firebase functions:log",
+    "de...": "firebase deploy --only functions:apienergias"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "mssql": "^11.0.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-09-29T01:31:46.709Z] Building nodejs source
+[debug] [2025-09-29T01:31:46.710Z] Failed to find version of module node: reached end of search path D:\Proyectos\energiasdelmediterraneo.api\functions\node_modules
+[warn] !  functions: Your requested "node" version "22" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-09-29T01:31:46.718Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-09-29T01:31:46.731Z] Found firebase-functions binary at 'D:\Proyectos\energiasdelmediterraneo.api\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8760
+
+[error] node:events:502
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8760
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at Function.listen (D:\Proyectos\energiasdelmediterraneo.api\functions\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Proyectos\energiasdelmediterraneo.api\functions\index.js:52:5)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1944:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 8760
+}
+
+[error] 
+Node.js v20.19.5
+
+[debug] [2025-09-29T01:31:56.760Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8760/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8760/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2025-09-29T01:32:37.455Z] ----------------------------------------------------------------------
+[debug] [2025-09-29T01:32:37.457Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Marti\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2025-09-29T01:32:37.457Z] CLI Version:   14.4.0
+[debug] [2025-09-29T01:32:37.458Z] Platform:      win32
+[debug] [2025-09-29T01:32:37.458Z] Node Version:  v20.19.5
+[debug] [2025-09-29T01:32:37.458Z] Time:          Sun Sep 28 2025 20:32:37 GMT-0500 (hora estándar de Perú)
+[debug] [2025-09-29T01:32:37.458Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-09-29T01:32:37.764Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-29T01:32:37.764Z] > authorizing via signed-in user (martinnets@gmail.com)
+[debug] [2025-09-29T01:32:37.765Z] [iam] checking project cursoreone for permissions ["firebase.projects.get"]
+[debug] [2025-09-29T01:32:37.766Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:32:37.766Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:32:37.767Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone:testIamPermissions [none]
+[debug] [2025-09-29T01:32:37.767Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone:testIamPermissions x-goog-quota-user=projects/cursoreone
+[debug] [2025-09-29T01:32:37.767Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-09-29T01:32:39.230Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone:testIamPermissions 200
+[debug] [2025-09-29T01:32:39.231Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-09-29T01:32:39.231Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:32:39.231Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:32:39.232Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/cursoreone/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-09-29T01:32:39.232Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/cursoreone/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/cursoreone
+[debug] [2025-09-29T01:32:43.097Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/cursoreone/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-09-29T01:32:43.097Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/cursoreone/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-09-29T01:32:43.097Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:32:43.097Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:32:43.098Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone [none]
+[debug] [2025-09-29T01:32:43.352Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone 200
+[debug] [2025-09-29T01:32:43.352Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone {"projectNumber":"830416773395","projectId":"cursoreone","lifecycleState":"ACTIVE","name":"cursoreone","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-05-31T15:18:46.981956Z"}
+[info] 
+[info] === Serving from 'D:\Proyectos\energiasdelmediterraneo.api'...
+[info] 
+[debug] [2025-09-29T01:32:43.369Z] defaultcredentials: writing to file C:\Users\Marti\AppData\Roaming\firebase\martinnets_gmail_com_application_default_credentials.json
+[debug] [2025-09-29T01:32:43.373Z] Setting GAC to C:\Users\Marti\AppData\Roaming\firebase\martinnets_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Marti\\AppData\\Roaming\\firebase\\martinnets_gmail_com_application_default_credentials.json"}}
+[debug] [2025-09-29T01:32:43.373Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:32:43.373Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:32:43.374Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cursoreone/adminSdkConfig [none]
+[debug] [2025-09-29T01:32:43.769Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cursoreone/adminSdkConfig 200
+[debug] [2025-09-29T01:32:43.769Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cursoreone/adminSdkConfig {"projectId":"cursoreone","storageBucket":"cursoreone.firebasestorage.app"}
+[info] i  functions: Watching "D:\Proyectos\energiasdelmediterraneo.api\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\Proyectos\\energiasdelmediterraneo.api\\functions\" for Cloud Functions..."}}
+[debug] [2025-09-29T01:32:44.014Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2025-09-29T01:32:45.533Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions:apienergias",
+    "logs": "firebase functions:log",
+    "de...": "firebase deploy --only functions:apienergias"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "mssql": "^11.0.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-09-29T01:32:45.533Z] Building nodejs source
+[debug] [2025-09-29T01:32:45.534Z] Failed to find version of module node: reached end of search path D:\Proyectos\energiasdelmediterraneo.api\functions\node_modules
+[warn] !  functions: Your requested "node" version "22" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-09-29T01:32:45.538Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-09-29T01:32:45.549Z] Found firebase-functions binary at 'D:\Proyectos\energiasdelmediterraneo.api\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8570
+
+[error] node:events:502
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8570
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at Function.listen (D:\Proyectos\energiasdelmediterraneo.api\functions\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Proyectos\energiasdelmediterraneo.api\functions\index.js:52:5)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1944:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 8570
+}
+
+Node.js v20.19.5
+
+[debug] [2025-09-29T01:33:41.247Z] ----------------------------------------------------------------------
+[debug] [2025-09-29T01:33:41.250Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Marti\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2025-09-29T01:33:41.250Z] CLI Version:   14.4.0
+[debug] [2025-09-29T01:33:41.250Z] Platform:      win32
+[debug] [2025-09-29T01:33:41.250Z] Node Version:  v20.19.5
+[debug] [2025-09-29T01:33:41.250Z] Time:          Sun Sep 28 2025 20:33:41 GMT-0500 (hora estándar de Perú)
+[debug] [2025-09-29T01:33:41.250Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-09-29T01:33:41.582Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-29T01:33:41.583Z] > authorizing via signed-in user (martinnets@gmail.com)
+[debug] [2025-09-29T01:33:41.583Z] [iam] checking project cursoreone for permissions ["firebase.projects.get"]
+[debug] [2025-09-29T01:33:41.584Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:33:41.584Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:33:41.586Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone:testIamPermissions [none]
+[debug] [2025-09-29T01:33:41.586Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone:testIamPermissions x-goog-quota-user=projects/cursoreone
+[debug] [2025-09-29T01:33:41.586Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-09-29T01:33:44.320Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone:testIamPermissions 200
+[debug] [2025-09-29T01:33:44.320Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-09-29T01:33:44.321Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:33:44.321Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:33:44.321Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/cursoreone/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-09-29T01:33:44.321Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/cursoreone/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/cursoreone
+[debug] [2025-09-29T01:33:45.889Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/cursoreone/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-09-29T01:33:45.889Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/cursoreone/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-09-29T01:33:45.889Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:33:45.889Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:33:45.890Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone [none]
+[debug] [2025-09-29T01:33:46.142Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone 200
+[debug] [2025-09-29T01:33:46.142Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone {"projectNumber":"830416773395","projectId":"cursoreone","lifecycleState":"ACTIVE","name":"cursoreone","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-05-31T15:18:46.981956Z"}
+[info] 
+[info] === Serving from 'D:\Proyectos\energiasdelmediterraneo.api'...
+[info] 
+[debug] [2025-09-29T01:33:46.161Z] defaultcredentials: writing to file C:\Users\Marti\AppData\Roaming\firebase\martinnets_gmail_com_application_default_credentials.json
+[debug] [2025-09-29T01:33:46.166Z] Setting GAC to C:\Users\Marti\AppData\Roaming\firebase\martinnets_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Marti\\AppData\\Roaming\\firebase\\martinnets_gmail_com_application_default_credentials.json"}}
+[debug] [2025-09-29T01:33:46.166Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:33:46.166Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:33:46.166Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cursoreone/adminSdkConfig [none]
+[debug] [2025-09-29T01:33:46.592Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cursoreone/adminSdkConfig 200
+[debug] [2025-09-29T01:33:46.593Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cursoreone/adminSdkConfig {"projectId":"cursoreone","storageBucket":"cursoreone.firebasestorage.app"}
+[info] i  functions: Watching "D:\Proyectos\energiasdelmediterraneo.api\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\Proyectos\\energiasdelmediterraneo.api\\functions\" for Cloud Functions..."}}
+[debug] [2025-09-29T01:33:46.627Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2025-09-29T01:33:47.982Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions:apienergias",
+    "logs": "firebase functions:log",
+    "de...": "firebase deploy --only functions:apienergias"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "mssql": "^11.0.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-09-29T01:33:47.982Z] Building nodejs source
+[debug] [2025-09-29T01:33:47.983Z] Failed to find version of module node: reached end of search path D:\Proyectos\energiasdelmediterraneo.api\functions\node_modules
+[warn] !  functions: Your requested "node" version "22" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-09-29T01:33:47.987Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-09-29T01:33:47.998Z] Found firebase-functions binary at 'D:\Proyectos\energiasdelmediterraneo.api\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8260
+
+[error] node:events:502
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8260
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at Function.listen (D:\Proyectos\energiasdelmediterraneo.api\functions\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Proyectos\energiasdelmediterraneo.api\functions\index.js:52:5)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1944:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 8260
+}
+
+Node.js v20.19.5
+
+[debug] [2025-09-29T01:33:58.021Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8260/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8260/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2025-09-29T01:35:24.580Z] ----------------------------------------------------------------------
+[debug] [2025-09-29T01:35:24.583Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Marti\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js serve
+[debug] [2025-09-29T01:35:24.583Z] CLI Version:   14.4.0
+[debug] [2025-09-29T01:35:24.583Z] Platform:      win32
+[debug] [2025-09-29T01:35:24.583Z] Node Version:  v20.19.5
+[debug] [2025-09-29T01:35:24.584Z] Time:          Sun Sep 28 2025 20:35:24 GMT-0500 (hora estándar de Perú)
+[debug] [2025-09-29T01:35:24.584Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-09-29T01:35:24.888Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-09-29T01:35:24.889Z] > authorizing via signed-in user (martinnets@gmail.com)
+[debug] [2025-09-29T01:35:24.889Z] [iam] checking project cursoreone for permissions ["firebase.projects.get"]
+[debug] [2025-09-29T01:35:24.890Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:35:24.890Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:35:24.891Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone:testIamPermissions [none]
+[debug] [2025-09-29T01:35:24.891Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone:testIamPermissions x-goog-quota-user=projects/cursoreone
+[debug] [2025-09-29T01:35:24.892Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-09-29T01:35:26.713Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone:testIamPermissions 200
+[debug] [2025-09-29T01:35:26.714Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2025-09-29T01:35:26.714Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:35:26.714Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:35:26.714Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/cursoreone/services/cloudresourcemanager.googleapis.com [none]
+[debug] [2025-09-29T01:35:26.714Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/cursoreone/services/cloudresourcemanager.googleapis.com x-goog-quota-user=projects/cursoreone
+[debug] [2025-09-29T01:35:28.106Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/cursoreone/services/cloudresourcemanager.googleapis.com 200
+[debug] [2025-09-29T01:35:28.106Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/cursoreone/services/cloudresourcemanager.googleapis.com [omitted]
+[debug] [2025-09-29T01:35:28.106Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:35:28.107Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:35:28.107Z] >>> [apiv2][query] GET https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone [none]
+[debug] [2025-09-29T01:35:28.363Z] <<< [apiv2][status] GET https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone 200
+[debug] [2025-09-29T01:35:28.364Z] <<< [apiv2][body] GET https://cloudresourcemanager.googleapis.com/v1/projects/cursoreone {"projectNumber":"830416773395","projectId":"cursoreone","lifecycleState":"ACTIVE","name":"cursoreone","labels":{"firebase":"enabled","firebase-core":"disabled"},"createTime":"2025-05-31T15:18:46.981956Z"}
+[info] 
+[info] === Serving from 'D:\Proyectos\energiasdelmediterraneo.api'...
+[info] 
+[debug] [2025-09-29T01:35:28.380Z] defaultcredentials: writing to file C:\Users\Marti\AppData\Roaming\firebase\martinnets_gmail_com_application_default_credentials.json
+[debug] [2025-09-29T01:35:28.387Z] Setting GAC to C:\Users\Marti\AppData\Roaming\firebase\martinnets_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\Marti\\AppData\\Roaming\\firebase\\martinnets_gmail_com_application_default_credentials.json"}}
+[debug] [2025-09-29T01:35:28.387Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:35:28.388Z] Checked if tokens are valid: true, expires at: 1759111936308
+[debug] [2025-09-29T01:35:28.388Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cursoreone/adminSdkConfig [none]
+[debug] [2025-09-29T01:35:28.798Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cursoreone/adminSdkConfig 200
+[debug] [2025-09-29T01:35:28.798Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cursoreone/adminSdkConfig {"projectId":"cursoreone","storageBucket":"cursoreone.firebasestorage.app"}
+[info] i  functions: Watching "D:\Proyectos\energiasdelmediterraneo.api\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"D:\\Proyectos\\energiasdelmediterraneo.api\\functions\" for Cloud Functions..."}}
+[debug] [2025-09-29T01:35:28.825Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2025-09-29T01:35:30.317Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions:apienergias",
+    "logs": "firebase functions:log",
+    "de...": "firebase deploy --only functions:apienergias"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "mssql": "^11.0.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-09-29T01:35:30.318Z] Building nodejs source
+[debug] [2025-09-29T01:35:30.318Z] Failed to find version of module node: reached end of search path D:\Proyectos\energiasdelmediterraneo.api\functions\node_modules
+[warn] !  functions: Your requested "node" version "22" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-09-29T01:35:30.323Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-09-29T01:35:30.333Z] Found firebase-functions binary at 'D:\Proyectos\energiasdelmediterraneo.api\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8206
+
+[error] node:events:502
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::8206
+    at Server.setupListenHandle [as _listen2] (node:net:1908:16)
+    at listenInCluster (node:net:1965:12)
+    at Server.listen (node:net:2067:7)
+    at Function.listen (D:\Proyectos\energiasdelmediterraneo.api\functions\node_modules\express\lib\application.js:635:24)
+    at Object.<anonymous> (D:\Proyectos\energiasdelmediterraneo.api\functions\index.js:14:5)
+    at Module._compile (node:internal/modules/cjs/loader:1521:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+    at Module.load (node:internal/modules/cjs/loader:1266:32)
+    at Module._load (node:internal/modules/cjs/loader:1091:12)
+    at Module.require (node:internal/modules/cjs/loader:1289:19)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1944:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 8206
+}
+
+[error] 
+Node.js v20.19.5
+
+[debug] [2025-09-29T01:35:40.363Z] Failed to call quitquitquit. This often means the server failed to start request to http://localhost:8206/__/quitquitquit failed, reason:  {"message":"request to http://localhost:8206/__/quitquitquit failed, reason: ","type":"system","errno":"ECONNREFUSED","code":"ECONNREFUSED"}
+[debug] [2025-09-29T01:35:41.973Z] File D:\Proyectos\energiasdelmediterraneo.api\functions\index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Proyectos\\energiasdelmediterraneo.api\\functions\\index.js changed, reloading triggers"}}
+[debug] [2025-09-29T01:35:42.978Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2025-09-29T01:35:44.500Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions:apienergias",
+    "logs": "firebase functions:log",
+    "de...": "firebase deploy --only functions:apienergias"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "mssql": "^11.0.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-09-29T01:35:44.501Z] Building nodejs source
+[debug] [2025-09-29T01:35:44.502Z] Failed to find version of module node: reached end of search path D:\Proyectos\energiasdelmediterraneo.api\functions\node_modules
+[warn] !  functions: Your requested "node" version "22" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-09-29T01:35:44.509Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-09-29T01:35:44.520Z] Found firebase-functions binary at 'D:\Proyectos\energiasdelmediterraneo.api\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8984
+
+[debug] [2025-09-29T01:35:47.028Z] Got response from /__/functions.yaml {"endpoints":{"apienergias":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"apienergias"}},"specVersion":"v1alpha1","requiredAPIs":[],"extensions":{}}
+[info] +  functions: Loaded functions definitions from source: apienergias. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: apienergias."}}
+[info] +  functions[us-central1-apienergias]: http function initialized (http://localhost:5000/cursoreone/us-central1/apienergias). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5000/cursoreone/us-central1/apienergias)."}}
+[debug] [2025-09-29T01:36:20.687Z] File D:\Proyectos\energiasdelmediterraneo.api\functions\service\medicion.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File D:\\Proyectos\\energiasdelmediterraneo.api\\functions\\service\\medicion.js changed, reloading triggers"}}
+[debug] [2025-09-29T01:36:21.699Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[debug] [2025-09-29T01:36:23.084Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions:apienergias",
+    "logs": "firebase functions:log",
+    "de...": "firebase deploy --only functions:apienergias"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "firebase-admin": "^12.6.0",
+    "firebase-functions": "^6.0.1",
+    "mssql": "^11.0.1",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2025-09-29T01:36:23.085Z] Building nodejs source
+[debug] [2025-09-29T01:36:23.085Z] Failed to find version of module node: reached end of search path D:\Proyectos\energiasdelmediterraneo.api\functions\node_modules
+[warn] !  functions: Your requested "node" version "22" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2025-09-29T01:36:23.088Z] Could not find functions.yaml. Must use http discovery
+[debug] [2025-09-29T01:36:23.098Z] Found firebase-functions binary at 'D:\Proyectos\energiasdelmediterraneo.api\functions\node_modules\.bin\firebase-functions'
