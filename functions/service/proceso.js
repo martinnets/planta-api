@@ -80,17 +80,12 @@ async function updateProceso(id, data) {
     .query(`
       UPDATE jeruth.tab_proceso
       SET 
-        SET id_proceso =@id_proceso)
-
-        SET id_ingreso =@id_ingreso)
-
-        SET codigo_usuario =@codigo_usuario)
-
-        SET fecha_desde =@fecha_desde)
-
-        SET fecha_hasta =@fecha_hasta)
-
-        SET id_empresa =@id_empresa)
+        id_proceso =@id_proceso)
+        id_ingreso =@id_ingreso)
+        codigo_usuario =@codigo_usuario)
+        fecha_desde =@fecha_desde)
+        fecha_hasta =@fecha_hasta)
+        id_empresa =@id_empresa)
       WHERE id_firmante = @id
     `);
 }
